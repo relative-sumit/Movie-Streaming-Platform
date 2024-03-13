@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          class="logo-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+          alt="netflix logo"
+        />
+      </div>
+      <div class="search">
+        <div class="search-bar">
+          <input id="searchBox" onkeyup="searchMovie()" type="text" placeholder="Search Movie" />
+          <img
+            class="search-icon"
+            onclick="searchMovie()"
+            src="https://www.vhv.rs/dpng/f/80-801530_search-icon-small-png-transparent-png.png"
+            alt="search icon"
+          />
+        </div>
+      </div>
+    </header>
+    <!-- <div class="movies">
+      <div class="movie">
+        <div class="overlay">
+          <div class="video"></div>
+          <div class="details">
+            <h2>Jurassic Park</h2>
+            <h3>IMDB: 7.7</h3>
+            <p>lorem ipsum gone to</p>
+          </div>
+        </div>
+        <img class="poster" src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/f00bf346385235.58520f9022451.jpg" alt="image">
+      </div>
+    </div> -->
+    <div class="movies" id="movies"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
